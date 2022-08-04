@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500;600&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Ibarra Real Nova', serif;
+    text-transform: capitalize;    
+    /* text-decoration: none;
+    border: none;
+    outline: none;
+    transition: all .4s linear; */
+}
+p{
+    font-size: 18px;
+}
+.subheading{
+    padding: 0%;
+    margin: 0%;
+    font-weight: 600;
+}
+
+.title{
+    font-family: 'Great Vibes', cursive;
+    font-weight: 400;
+    font-size: 80px;
+}
+
+/* nav section start */
+/* .navbar{
+    background: linear-gradient(to top left, #EBECEE,#B7B8BA,#858688,#57585A,#2D2D2F);
+    transition: 2s;
+} */
+
+.bgColor.scrolled{
+   background: #88898b;
+}
+
+.navbar-brand{
+    font-weight: bolder;
+}
+.navbar-brand span{
+    color: #fe6f27;
+    font-size: 40px;
+}
+.navbar-nav .nav-item .nav-link{
+    color: white;
+}
+/* .navbar-nav .nav-item .nav-link:hover {
+    background-color: #fe6f27;
+    border-radius:5px;
+    transition: 0.5s ease-in-out;
+} */
+.active{
+    background-color: #fe6f27;
+    border-radius: 5px;
+}
+
+
+
+.navbar-collapse .btn:hover{
+    border: 1px solid #fe6f27;
+    background-color: #fe6f27;
+}
+.navbar .btn-outline-light{
+    background: #fe6f27;
+}
+/* nav section end */
+/* banner section start */
+.banner{
+    background:linear-gradient(to left bottom , #EBECEE,#B7B8BA,#858688,#57585A,#2D2D2F);
+}
+.bannerimage{
+    background:url(../images/dptran.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size:contain;
+    height: 80vh;
+}
+.bannertext h1{
+    color: #fe6f27;
+}
+.bannerBody{
+    transform: translateY(60%);
+}
+/* banner section end */
+
+
+
+/* about sec start */
+.fa-circle{
+    color: #fe6f27;
+    font-size: 10px;
+}
+
+.row .aboutName h1::after{
+    content: "";
+    display: block; 
+    background: #fe6f27;
+    height: 5px; 
+    width: 60px;
+    border-radius: 5px;
+}
+.row .profileHeader::after{
+    content: "";
+    display: block; 
+    background: #fe6f27;
+    height: 2px;   
+}
+.row .profile i{
+    font-size: 22px;
+}
+.aboutImage{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .8);
+}
+
+/* about sec end */
+
+
+
+/* myservice sec start */
+.myservices{
+    background: #ececee;
+}
+.myservices .card h3{
+    font-size: 20px;
+}
+/* myservice sec end */
+
+
+
+
+/* resume sec start */
+.owl-carousel .active span {
+    background: transparent  !important;
+    border: 2px solid green;
+}
+
+.resume .btn{
+    background-color: #fe6f27;
+    color: white;
+    font-size: 20px;
+}
+.resume .stars i{
+    color: #fe6f27;
+}
+
+/* resume sec end */
+
+
+
+/* contact sec start */
+.contact{
+    background: #ececee;
+}
+.contact form input, .contact form textarea{
+    font-weight: 600;
+    font-size: 20px;
+}
+/* contact sec end */
+
+
+/* footer */
+.footer .footerIcons .icon1{
+    border: 2px solid white;
+    color: white;
+    border-radius: 50%;
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 25px;
+
+}
+.footer .footerIcons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    margin: 10px 0px;
+}
+
+
+
+
+/* animation */
+.box{
+    cursor: pointer;
+}
+.inner::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom:0;
+	width:0;
+	box-sizing: border-box;
+	height: 0;
+	border-bottom:3px solid transparent;
+	border-left: 3px solid transparent;
+	transition: all .8s ease-in-out;
+}
+.inner::after{
+	content: '';
+	position: absolute;
+	right:0;
+	top:0;
+	width:0;
+	box-sizing: border-box;
+	height:0;
+	border-top:3px solid transparent;
+	border-right: 3px solid transparent;
+	transition: all .8s ease-in-out;
+}
+.box:hover .inner::after,
+.box:hover .inner::before{
+   border-color: #fe6f27;
+   width: 100%;
+   height: 100%;
+}
+
+
+/* footer */
+
+.footerIcons > a:nth-child(1):hover{
+    background: #4267B2;
+    border: none;
+ }
+.footerIcons > a:nth-child(2):hover{
+    background: #1DA1F2;
+    border: none;
+ }
+ .footerIcons > a:nth-child(3):hover{
+    background:linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);;
+    border: none;
+ }
+ .footerIcons > a:nth-child(4):hover{
+    background: #0077b5;
+    border: none;
+ }
+ .footerIcons > a:nth-child(5):hover{
+    background: #fe0000;
+    border: none;
+ }
+
+
+
+
+
+
+
